@@ -1,9 +1,12 @@
 # watchtower
 
-> My super-excellent app
+> Hot-reload
+> Less compilation
+> Linting with standard
+> Devtools with Devtron
 
 
-## Dev
+## Install
 
 ```
 $ npm install
