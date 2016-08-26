@@ -1,4 +1,4 @@
-# watchtower
+# electron-start
 
 > Hot-reload
 > Less compilation
