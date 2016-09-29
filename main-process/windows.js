@@ -2,7 +2,7 @@ const window = require('electron-window')
 
 const path = require('path')
 
-const debug = /--debug/.test(process.argv[4])
+const debug = /--debug/.test(process.argv.join(' '))
 
 const createWindow = ({file, data, dimensions}) => {
   const win = window.createWindow(Object.assign({}, { width: 1000, height: 800 }, dimensions))

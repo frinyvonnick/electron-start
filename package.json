@@ -32,17 +32,17 @@
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "^1.0.0",
-    "electron-window": "^0.8.1"
+    "electron-debug": "1.0.0",
+    "electron-window": "0.8.1"
   },
   "devDependencies": {
-    "devtron": "^1.1.0",
-    "electron-connect": "^0.4.2",
-    "electron-packager": "^7.0.0",
-    "electron-prebuilt": "^1.0.1",
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.1.0",
-    "less": "^2.7.1",
-    "standard": "^7.1.2"
+    "devtron": "1.1.0",
+    "electron": "1.4.0",
+    "electron-connect": "0.6.0",
+    "electron-packager": "8.0.0",
+    "gulp": "3.9.1",
+    "gulp-less": "3.1.0",
+    "less": "2.7.1",
+    "standard": "8.2.0"
   }
 }
