@@ -17,7 +17,7 @@ gulp.task('default', ['less'], () => {
   })
   // Reload renderer process
   gulp.watch([
-		'./index.js'
+		'./index.js',
     './renderer-process/**/*.js',
     './windows/**/*.html',
     './assets/**/*.{less,js,css}'
