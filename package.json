@@ -14,35 +14,44 @@
     "email": "frin.yvonnick@gmail.com",
     "url": "https://github.com/frinyvonnick"
   },
-  "scripts": {
-    "start": "gulp",
-    "dev": "gulp --debug",
-    "lint": "standard",
-    "less": "gulp less",
-    "test": "npm run lint",
-    "build": "electron-packager . --out=dist --app-version=$npm_package_version --prune --asar --overwrite --all --ignore \"node_modules/\\.bin\""
+  "_moduleAliases": {
+    "src": "./src",
+    "assets": "./src/assets",
+    "windows": "./src/windows",
+    "main-process": "./src/main-process",
+    "renderer-process": "./src/renderer-process"
   },
-  "files": [
-    "index.js",
-    "index.html",
-    "index.css"
-  ],
+  "build": {
+    "publish": {
+      "GithubOptions": {
+
+      }
+    }
+  },
+  "scripts": {
+    "start": "electron src",
+    "dev": "cross-env NODE_ENV=developpement nodemon -e js --watch src/main-process --watch src/index.js --exec 'npm start'",
+    "lint": "standard",
+    "pack": "build --dir -mwl --x64",
+    "dist": "build -mwl --x64"
+  },
   "keywords": [
     "electron-app",
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "1.0.0",
-    "electron-window": "0.8.1"
+    "electron-debug": "^1.1.0",
+    "electron-updater": "^1.11.2",
+    "electron-window": "^0.8.1",
+    "glob": "^7.1.1",
+    "module-alias": "^2.0.0"
   },
   "devDependencies": {
-    "devtron": "1.1.0",
-    "electron": "1.4.0",
-    "electron-connect": "0.6.0",
-    "electron-packager": "8.0.0",
-    "gulp": "3.9.1",
-    "gulp-less": "3.1.0",
-    "less": "2.7.1",
-    "standard": "8.2.0"
+    "cross-env": "^4.0.0",
+    "devtron": "^1.1.0",
+    "electron": "^1.4.0",
+    "electron-builder": "^16.6.1",
+    "nodemon": "^1.11.0",
+    "standard": "^8.2.0"
   }
 }
