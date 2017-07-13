@@ -7,7 +7,7 @@
 In your directory you can run
 
 ```bash
-$ curl -fsSL https|//github.com/frinyvonnick/electron-start/archive/master.tar.gz | tar -xz --strip-components 2
+$ curl -fsSL https://github.com/frinyvonnick/electron-start/archive/master.tar.gz | tar -xz --strip-components 2
 ```
 
 You can also `git clone` or [download](https|//github.com/frinyvonnick/electron-start/archive/master.tar.gz) this repository.
