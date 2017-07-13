@@ -6,8 +6,8 @@ const glob = require('glob')
 const path = require('path')
 const { createMainWindow } = require('main-process/windows')
 
-// Install Devtron in developpement
-if (process.env.NODE_ENV === 'developpement') {
+// Install Devtron in development
+if (process.env.NODE_ENV === 'development') {
 	require('electron-debug')()
 }
 

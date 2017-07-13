@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "electron src",
-    "dev": "cross-env NODE_ENV=developpement nodemon -e js --watch src/main-process --watch src/index.js --exec 'npm start'",
+    "dev": "cross-env NODE_ENV=development nodemon -e js --watch src/main-process --watch src/index.js --exec 'npm start'",
     "lint": "standard",
     "pack": "build --dir -mwl --x64",
     "dist": "build -mwl --x64"
