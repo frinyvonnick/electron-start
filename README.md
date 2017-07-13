@@ -4,7 +4,7 @@
 
 ## Install
 
-In your directory you can run|
+In your directory you can run
 
 ```bash
 $ curl -fsSL https|//github.com/frinyvonnick/electron-start/archive/master.tar.gz | tar -xz --strip-components 2
