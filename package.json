@@ -23,14 +23,11 @@
   },
   "build": {
     "publish": {
-      "GithubOptions": {
-
-      }
+      "GithubOptions": {}
     }
   },
   "scripts": {
-    "start": "electron src",
-    "dev": "cross-env NODE_ENV=development nodemon -e js --watch src/main-process --watch src/index.js --exec 'npm start'",
+    "start": "cross-env NODE_ENV=development nodemon -e js --watch src/main-process --watch src/index.js --exec 'electron src'",
     "lint": "standard",
     "pack": "build --dir -mwl --x64",
     "dist": "build -mwl --x64"
@@ -41,18 +38,19 @@
     "easy-to-use"
   ],
   "dependencies": {
-    "electron-debug": "^1.1.0",
-    "electron-updater": "^1.11.2",
+    "electron-debug": "^1.4.0",
+    "electron-reload": "^1.2.1",
+    "electron-updater": "^2.8.7",
     "electron-window": "^0.8.1",
-    "glob": "^7.1.1",
-    "module-alias": "^2.0.0"
+    "glob": "^7.1.2",
+    "module-alias": "^2.0.1"
   },
   "devDependencies": {
-    "cross-env": "^4.0.0",
+    "cross-env": "^5.0.5",
     "devtron": "^1.1.0",
-    "electron": "^1.4.0",
-    "electron-builder": "^16.6.1",
+    "electron": "^1.7.5",
+    "electron-builder": "^19.26.0",
     "nodemon": "^1.11.0",
-    "standard": "^8.2.0"
+    "standard": "^10.0.3"
   }
 }

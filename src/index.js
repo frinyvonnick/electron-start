@@ -9,6 +9,7 @@ const { createMainWindow } = require('main-process/windows')
 // Install Devtron in development
 if (process.env.NODE_ENV === 'development') {
 	require('electron-debug')()
+	require('electron-reload')('src/{assets,renderer-process,windows}/**/*.*')
 }
 
 // Prevent window being garbage collected
